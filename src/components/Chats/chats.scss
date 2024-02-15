@@ -1,0 +1,29 @@
+@import "../../assets/styles/mixin.scss";
+.chats{
+    padding: 8px;
+    @include flex(column,flex-start,center);
+    background: rgba(31, 41, 55, 1);
+    border-left: 1px solid rgba(55, 65, 81, 1);
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+        overflow-y: scroll; /* Apply scrollbar to the y-axis only */
+        overflow-x: visible;
+    }
+    .container::-webkit-scrollbar {
+        width: 12px;
+    }
+      
+    .container::-webkit-scrollbar-track {
+        background: rgba(31, 41, 55, 1);
+    }
+      
+    .container::-webkit-scrollbar-thumb {
+        background-color: rgba(16, 24, 38, 1);
+        border-radius: 20px;
+        border: 3px solid rgba(31, 41, 55, 1);
+    }
+}
+

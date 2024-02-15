@@ -1,0 +1,87 @@
+@import "../../assets/styles/mixin.scss";
+.user{
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    .user-image{
+        max-width: 100%;
+        border-radius: 8px;
+        border: 1px solid rgba(31, 41, 55, 0.50);
+        outline: 2px solid none;
+        background: rgba(55, 65, 81, 0.50);
+    }
+    .name{
+        position: absolute;
+        padding: 4px 8px;
+        bottom: 5px;
+        left: 0;
+        border-radius: 0px 6px 0px 8px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        background: rgba(0, 0, 0, 0.50);
+        backdrop-filter: blur(10px);
+        @include flex(row,center,center,2px);
+        p{
+            color: #FFF;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Google Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .microphone{
+        max-width: 100%;
+        position: absolute;
+        padding: 4px 8px;
+        bottom: 5px;
+        right: 0;
+        border-radius: 6px 0px 8px 0px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        background: rgba(0, 0, 0, 0.50);
+        backdrop-filter: blur(10px);
+    }
+    .hand{
+        position: absolute;
+        padding: 4px 8px;
+        top: 0px;
+        left: 0px;
+        border-radius: 6px 0px 8px 0px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        background: rgba(0, 0, 0, 0.50);
+        backdrop-filter: blur(10px);
+        @include flex(row,center,center,2px);
+    }
+    .emoji{
+        position: absolute;
+        padding: 4px 8px;
+        top: 0px;
+        right: 0px;
+        border-radius: 0px 6px 0px 8px;
+        border: 1px solid rgba(0, 0, 0, 0.50);
+        background: rgba(0, 0, 0, 0.50);
+        backdrop-filter: blur(10px);
+    }
+}
+.user-border{
+    .user-image{
+        border: 1px solid #FDE047;
+        outline: 2px solid #FDE047;
+    }
+    .name{
+        bottom: 3px;
+        left: -3px;
+    }
+    .microphone{
+        bottom: 3px;
+        right: -2px;
+    }
+    .hand{
+        top: -2px;
+        left: -2px;
+    }
+    .emoji{
+        top: -2px;
+        right: -2px;
+    }
+}

@@ -1,0 +1,51 @@
+@import "../../assets/styles/mixin.scss";
+.viewer{
+    background: rgba(31, 41, 55, 1);
+    border: 1px solid rgba(55, 65, 81, 1);
+    @include flex(column,center,center);
+    .container{
+        width: 95%;
+        @include flex(row,space-between,center);
+        .grids{
+            height: 80px;
+            padding: 16px 0px;
+            @include flex(row,space-between,center,10px);
+            .grid{
+                height: 80px;
+                padding-inline: 16px;
+                @include flex(column,space-between,space-between);
+                img{
+                    cursor: pointer;
+                }
+                .top,.bottom{
+                    width: 24px;
+                    height: 1px;
+                }
+                .bottom-active{
+                    background: #2D8CFF;
+                    box-shadow: 0px -2px 4px 0px rgba(45, 140, 255, 0.80);
+                }
+            }
+        }
+        .protect{
+            width: 12%;
+        }
+        .record{
+            width: 12%;
+            @include flex(row,space-between,center,8px);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(75, 85, 99, 1);
+            background: rgba(55, 65, 81, 1);
+            p{
+                color: #D1D5DB;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Google Sans;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}

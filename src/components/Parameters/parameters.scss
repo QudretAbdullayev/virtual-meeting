@@ -1,0 +1,53 @@
+@import "../../assets/styles/mixin.scss";
+.parameters{
+    border: 1px solid #4B5563;
+    background: rgba(31, 41, 55, 1);
+    border: 1px solid rgba(55, 65, 81, 1);
+    padding: 16px 0px;
+    @include flex(column,center,center);
+    .container{
+        width: 95%;
+        @include flex(row,space-between,center);
+        button{
+            cursor: pointer;
+        }
+        .large-card-row{
+            height: 58px;
+            @include flex(row,center,center,8px);
+            border-radius: 8px;
+            border: 1px solid rgba(75, 85, 99, 1);
+            background: rgba(55, 65, 81, 1);
+            padding: 16px;
+            width: 130px;
+        }
+        .leave{
+            height: 58px;
+            @include flex(row,center,center);
+            width: 130px;
+            border-radius: 8px;
+            border: 1px solid #EF4444;
+            background: #EF4444;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 12px;
+        }
+        .card-rows{
+            @include flex(row,space-between,center,16px);
+            .small-card-row{
+                height: 58px;
+                @include flex(row,center,center,8px);
+                border-radius: 8px;
+                border: 1px solid rgba(75, 85, 99, 1);
+                background: rgba(55, 65, 81, 1);
+                padding: 16px;
+                width: 76px;
+            }
+            .blue{
+                background:  #2D8CFF;
+                border: 1px solid #2D8CFF;
+            }
+        }
+    }
+}

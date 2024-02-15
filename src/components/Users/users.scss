@@ -1,0 +1,28 @@
+@import "../../assets/styles/mixin.scss";
+.users{
+    @include flex(column,center,center);
+    background-color: rgba(16, 24, 38, 1);
+    padding: 16px 0px;
+    .container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 8px;
+        column-gap: 8px;
+        .user{
+            justify-self: center;
+        }
+    }
+    .slider{
+        @include flex(row,center,center,32px);
+        padding: 16px 0px 8px 0px;
+        .pages{
+            @include flex(row,center,center,16px);
+        }
+        button{
+            cursor: pointer;
+            background-color: rgba(16, 24, 38, 1);
+            border: 1px solid rgba(16, 24, 38, 1);
+        }
+    }
+  }

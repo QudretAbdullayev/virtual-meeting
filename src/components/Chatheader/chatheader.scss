@@ -1,0 +1,19 @@
+@import "../../assets/styles/mixin.scss";
+.chatheader{
+    background: rgba(31, 41, 55, 1);
+    border-left: 1px solid rgba(55, 65, 81, 1);
+    border-bottom: 1px solid rgba(55, 65, 81, 1);
+    padding: 16px 0px;
+    @include flex(column,center,center);
+    .container{
+        width: 90%;
+        @include flex(row,space-between,center);
+        .chat-base{
+            color: #9CA3AF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

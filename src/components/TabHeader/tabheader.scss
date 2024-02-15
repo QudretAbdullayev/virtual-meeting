@@ -1,0 +1,34 @@
+@import "../../assets/styles/mixin.scss";
+.tabheader{
+    border: 1px solid #4B5563;
+    background: rgba(31, 41, 55, 1);
+    border: 1px solid rgba(55, 65, 81, 1);
+    padding: 16px 0px;
+    @include flex(column,center,center);
+    .container{
+        width: 85%;
+        @include flex(row,space-between,center);
+        border-radius: 10px;
+        background: rgba(55, 65, 81, 1);
+        padding: 4px;
+        .card-row{
+            cursor: pointer;
+            background: rgba(55, 65, 81, 1);
+            border: 1px solid rgba(55, 65, 81, 1);
+            border-radius: 8px;
+            width: 50%;
+            padding: 16px;
+            @include flex(row,center,center,8px);
+            color: #9CA3AF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+        }
+        .blue{
+            color: #FFF;
+            background: rgba(45, 140, 255, 1);
+            border: 1px solid rgba(45, 140, 255, 1);
+        }
+    }
+}

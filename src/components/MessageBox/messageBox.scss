@@ -1,0 +1,56 @@
+@import "../../assets/styles/mixin.scss";
+.messageBox{
+    border: 1px solid #4B5563;
+    background: rgba(31, 41, 55, 1);
+    border: 1px solid rgba(55, 65, 81, 1);
+    padding: 16px 0px;
+    @include flex(column,center,center);
+    .container{
+        width: 90%;
+        @include flex(column,space-between,space-between,10px);
+        .chatbar{
+            @include flex(row, space-between,center);
+            .toWho, .icons{
+                @include flex(row, center,center,8px);
+            }
+            .toWho{
+                cursor: pointer;
+                padding: 4px 8px;
+                border-radius: 4px;
+                background: rgba(55, 65, 81, 1);
+                border: 1px solid rgba(55, 65, 81, 1);
+                p{
+                    color: #D1D5DB;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            .icons{
+                button{
+                    cursor: pointer;
+                    background: rgba(31, 41, 55, 1);
+                    border: 1px solid rgba(31, 41, 55, 1);
+                }
+            }
+        }
+        form{
+            width: 100%;
+            @include flex(row, space-between,center,8px);
+            input{
+                width: 85%;
+                background: rgba(31, 41, 55, 1);
+                outline: none;
+                border: none;
+            }
+            button{
+                cursor: pointer;
+                padding: 8px;
+                border-radius: 8px;
+                background:  #2D8CFF;
+                border: 1px solid #2D8CFF;
+            }
+        }
+    }
+}

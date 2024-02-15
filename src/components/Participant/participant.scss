@@ -1,0 +1,50 @@
+@import "../../assets/styles/mixin.scss";
+.participant{
+    @include flex(row,space-between,center);
+    padding: 8px;
+    .card{
+        @include flex(row,flex-start,center,8px);
+        img{
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .content{
+            @include flex(column);
+            .name{
+                color: #D1D5DB;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%; 
+            }
+            .position{
+                color: #6B7280;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
+        }
+    }
+    .card-row{
+        @include flex(row,flex-end,center,8px);
+        .host{
+            text-align: center;
+            padding: 4px 8px;
+            border-radius: 100px;
+            border: 1px solid rgba(45, 140, 255, 0.10);
+            background: rgba(45, 140, 255, 0.10);
+            color: #2D8CFF;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 60px;
+        }
+        .host-none{
+            display: none;
+        }
+    }
+}
